@@ -1,0 +1,53 @@
+.num, .weight{
+	font-size:0.5vmin;
+}
+.num{
+	float:left;
+}
+.weight{
+	text-align:right;
+}
+.Blank{
+	Border-style:hidden;
+}
+.alkmetal{
+	Background: purple;
+}
+.alkalineearth{
+	Background: darkorchid;
+}
+.nonmetal{
+	Background: yellow;
+}
+.transmetal{
+	Background: skyBlue;
+}
+.basicmetal{
+	Background: lightseagreen;
+}
+.semimetal{
+	Background: green;
+}
+.halogen{
+	Background: orange;
+}
+.noblegas{
+	Background: red;
+}
+.lanthanide{
+	Background:rosyBRown;
+}
+.actinide{
+	Background: indianred;
+}
+TD {
+	width: 5vmin;
+	height: 5vmin;
+	text-align:center;
+	font-size:2vmin;
+	Border:0.5vmin solid Black;
+}
+IMG {
+	width: 90vmin;
+	height: 50vmin;
+}
