@@ -3,11 +3,12 @@
 
 function ssap2_sort($a, $b)
 {
-	$len = (strlen($a) > strlen($b)) ? strlen($b) : strlen($a);
+	print "$a\n";
+	$len = (strlen($a) >= strlen($b)) ? strlen($b) : strlen($a);
 	$a = strtolower($a);
 	$b = strtolower($b);
 	$i = 0;
-	while (i < $len && $a[$i] == $b[$i])
+	while ($i < $len && $a[$i] == $b[$i])
 		$i++;
 	$a_char = ($i == strlen($a)) ? chr(0) : $a[$i];
 	$b_char = ($i == strlen($b)) ? chr(0) : $b[$i];
@@ -23,7 +24,8 @@ function ssap2_sort($a, $b)
 		$b_val += 255;
 	if (!ctype_alnum($b_char))
 		$b_val += 511;
-	return($a_val - $b_val);
+	$ret = $a_val - $b_val;
+	return ($ret);
 }
 
 if ($argc == 1)
@@ -35,7 +37,5 @@ for ($i=1; $i < $argc; $i++){
 }
 usort($merge, "ssap2_sort");
 print_r(implode("\n", $merge));
-
-
 
 ?>
