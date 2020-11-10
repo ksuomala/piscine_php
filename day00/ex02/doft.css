@@ -4,8 +4,8 @@ body {
 
 header {
 	background-color: #909090;
-	width: 1840px;
-	height: 180px;
+	width: 1800px;
+	height: 177px;
 	margin: auto;
 	display: flex;
 	flex-direction: row;
@@ -16,7 +16,7 @@ header {
 }
 
 .middle {
-	width: 1750px;
+	width: 1745px;
 	margin: auto;
 	display: flex;
 	flex-direction: row;
@@ -31,7 +31,7 @@ header {
 	display: flex;
 	flex-direction: column;
 	padding: 10px 0px 20px;
-	width: 180px;
+	width: 170px;
 	height: 500px;
 }
 
@@ -123,3 +123,15 @@ header {
 	margin: 0px 0px 0px 40px;
 }
 
+.cropped {
+	width: 625px;
+	height: 205px;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px black;
+}
+
+.cropped img {
+	margin: -810px 0px 0px -42px;
+	transform: scale(1.2);
+}
