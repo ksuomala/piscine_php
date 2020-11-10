@@ -18,7 +18,7 @@ function ssap2_sort($a, $b)
 	if (!ctype_alpha($a_char))
 		$a_val += 255;
 	if (!ctype_alnum($a_char))
-		$a_val += 511;
+		$a_val += 512;
 	if (!ctype_alpha($b_char))
 		$b_val += 255;
 	if (!ctype_alnum($b_char))
