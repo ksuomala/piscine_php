@@ -3,7 +3,6 @@
 
 function ssap2_sort($a, $b)
 {
-	print "$a\n";
 	$len = (strlen($a) >= strlen($b)) ? strlen($b) : strlen($a);
 	$a = strtolower($a);
 	$b = strtolower($b);
@@ -37,5 +36,4 @@ for ($i=1; $i < $argc; $i++){
 }
 usort($merge, "ssap2_sort");
 print_r(implode("\n", $merge));
-
 ?>
