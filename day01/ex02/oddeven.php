@@ -1,10 +1,12 @@
 #!/usr/bin/php
 <?PHP
 
-print "Enter a number: ";
-
-while ($line = trim(fgets(STDIN)))
+while (1)
 {
+	print "Enter a number: ";
+	$line = trim(fgets(STDIN));
+	if ($line == NULL)
+		exit();
 	if (is_numeric($line))
 	{
 		if ($line % 2)
