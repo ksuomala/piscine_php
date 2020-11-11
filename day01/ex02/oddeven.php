@@ -1,11 +1,10 @@
 #!/usr/bin/php
 <?PHP
-
 while (1)
 {
 	print "Enter a number: ";
 	$line = trim(fgets(STDIN));
-	if ($line == NULL)
+	if (feof(STDIN))
 		exit();
 	if (is_numeric($line))
 	{
@@ -15,6 +14,6 @@ while (1)
 			print "The number $line is even\n";
 	}
 	else
-		print "$line is not a number\n";
+		print "'$line' is not a number\n";
 }
 ?>
