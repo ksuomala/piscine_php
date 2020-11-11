@@ -3,7 +3,7 @@
 
 function ft_split($string)
 {
-	$keywords = preg_split("/[\s,]+/", trim($string));
+	$keywords = preg_split("/ +/", trim($string));
 	sort($keywords);
 	return ($keywords);
 }
