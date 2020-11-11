@@ -7,6 +7,7 @@
 		$merge = array_merge((array)$merge, (array)$keywords);
 	}
 	sort($merge);
+	print_r ($merge);
 	print_r(implode("\n", $merge));
 	print "\n";
 ?>

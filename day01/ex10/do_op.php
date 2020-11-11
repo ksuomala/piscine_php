@@ -19,4 +19,5 @@ if ($op == '/')
 	print ($a / $b);
 if ($op == '%')
 	print ($a % $b);
+print "\n";
 ?>
