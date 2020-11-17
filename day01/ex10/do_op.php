@@ -1,6 +1,5 @@
 #!/usr/bin/php
 <?
-
 if ($argc != 4)
 {
 	print "incorrect parameters";
