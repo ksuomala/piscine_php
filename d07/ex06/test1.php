@@ -60,17 +60,17 @@ $requested_fighters = Array(
 $actual_fighters = Array(
 );
 
-// foreach ($requested_fighters as $rf) {
-// 	$f = $uf->fabricate($rf);
-// 	if ($f != null) {
-// 		array_push($actual_fighters, $f);
-// 	}
-// }
+foreach ($requested_fighters as $rf) {
+	$f = $uf->fabricate($rf);
+	if ($f != null) {
+		array_push($actual_fighters, $f);
+	}
+}
 
-// $targets = Array("the Hound", "Tyrion", "Podrick");
+$targets = Array("the Hound", "Tyrion", "Podrick");
 
-// foreach ($actual_fighters as $f) {
-// 	foreach ($targets as $t) {
-// 		$f->fight($t);
-// 	}
-// }
+foreach ($actual_fighters as $f) {
+	foreach ($targets as $t) {
+		$f->fight($t);
+	}
+}
