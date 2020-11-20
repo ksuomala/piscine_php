@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<style>
+			#balloon {
+				width: 200px;
+				height: 200px;
+				background-color: red;
+				display: inline-block;
+				border-radius: 50%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id='balloon' onclick="addSize()">
+
+		</div>
+		<script>
+			const colors = ['red', 'green', 'blue'];
+			var ball = document.getElementById('balloon');
+			var size = ball.clientHeight;
+			i = 0;
+			function addSize()
+			{
+				if (i == 2)
+					i = 0;
+				else
+					i++;
+				if (size < 420)
+					size += 10;
+				else
+					size = 200;
+				ball.style.height = size + 'px';
+				ball.style.width = size + 'px';
+				ball.style.backgroundColor = colors[i];
+			}
+		</script>
+	</body>
+</html>
