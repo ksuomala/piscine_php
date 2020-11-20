@@ -26,26 +26,30 @@
 			butt.addEventListener('click', () => {
 				left = parseInt(first.value);
 				right = parseInt(second.value);
-				if (left < 0 || right < 0)
+				if (left >= 0 && right >= 0)
+				{
+					if ((op.value == '/' || op.value == '%') && right == 0)
+						alert('It\'s over 9000!');
+					else if (op.value == '+')
+						nb = left + right;
+					else if (op.value == '-')
+						nb = left - right;
+					else if (op.value == '*')
+						nb = left * right;
+					else if (op.value == '/')
+						nb = left / right;
+					else if (op.value == '%')
+						nb = left % right;
+					alert(nb);
+					console.log(nb);
+				}
+				else
 				{
 					alert('Error :(');
 					return ;
 				}
-				else if ((op.value == '/' || op.value == '%') && right == 0)
-					nb = 'It\'s over 9000!';
-				else if (op.value == '+')
-					nb = left + right;
-				else if (op.value == '-')
-					nb = left - right;
-				else if (op.value == '*')
-					nb = left * right;
-				else if (op.value == '/')
-					nb = left / right;
-				else if (op.value == '%')
-					nb = left % right;
-				alert(nb);
-				console.log(nb);
 				})
+				setInterval(function(){alert("Please, use me...")}, 30000);
 		</script>
 	</body>
 </html>
