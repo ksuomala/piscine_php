@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<style>
+
+
+		</style>
+	</head>
+
+	<body>
+			<input type="text" id="first" value=""><br />
+			<select type="select" id="op">
+				<option name='+'>+</option>
+				<option name='-'>-</option>
+				<option name='*'>*</option>
+				<option name='/'>/</option>
+				<option name='%'>%</option>
+			</select>
+			<br />
+			<input type="text" id="second" value="">
+			<input id='button' type='submit' value='Try me!'>
+		<script>
+			const first = document.getElementById('first');
+			const second = document.getElementById('second');
+			const butt = document.getElementById('button');
+			const op = document.getElementById('op');
+			butt.addEventListener('click', () => {
+				left = parseInt(first.value);
+				right = parseInt(second.value);
+				if (left < 0 || right < 0)
+				{
+					alert('Error :(');
+					return ;
+				}
+				else if ((op.value == '/' || op.value == '%') && right == 0)
+					nb = 'It\'s over 9000!';
+				else if (op.value == '+')
+					nb = left + right;
+				else if (op.value == '-')
+					nb = left - right;
+				else if (op.value == '*')
+					nb = left * right;
+				else if (op.value == '/')
+					nb = left / right;
+				else if (op.value == '%')
+					nb = left % right;
+				alert(nb);
+				console.log(nb);
+				})
+		</script>
+	</body>
+</html>
