@@ -28,7 +28,7 @@
 					i = 0;
 				else
 					i++;
-				if (size < 420)
+				if (size + 10 <= 420)
 					size += 10;
 				else
 					size = 200;
@@ -40,6 +40,7 @@
 			{
 				if (!clicks)
 				{
+					console.log(clicks);
 					if (i == 0)
 						i = 2;
 					else
@@ -52,6 +53,7 @@
 				}
 				clicks = 0;
 			})
+			console.log(clicks);
 		</script>
 	</body>
 </html>
