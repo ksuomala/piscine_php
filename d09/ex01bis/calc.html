@@ -4,6 +4,11 @@
 
 
 		</style>
+		<script
+				src="https://code.jquery.com/jquery-3.5.1.js"
+				integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+				crossorigin="anonymous">
+		</script>
 	</head>
 
 	<body>
@@ -19,18 +24,13 @@
 			<input type="text" id="second" value="">
 			<input id='button' type='submit' value='Try me!'>
 		<script>
-			const first = document.getElementById('first');
-			const second = document.getElementById('second');
-			const butt = document.getElementById('button');
-			const op = document.getElementById('op');
-			butt.addEventListener('click', () => {
-				if (first.value.match(/^[0-9]+$/) && second.value.match(/^[0-9]+$/))
-				{
-					left = Number(first.value);
-					right = Number(second.value);
-				}
-				else
-					left = -1;
+			const first = $('#first');
+			const second = $('#second');
+			const butt = $('#button');
+			const op = $('#op');
+			butt.on('click', () => {
+				left = first.val();
+				right = second.val();
 				if (left >= 0 && right >= 0)
 				{
 					if (op.value == '+')

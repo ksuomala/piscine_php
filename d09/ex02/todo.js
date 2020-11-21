@@ -35,7 +35,7 @@ function newTask()
 		div.setAttribute('id', cookie_id);
 		div.setAttribute('onclick', 'delElem(id)');
 		parent.insertBefore(div, parent.firstChild);
-		document.cookie = cookie_id + "=" + task;
+		document.cookie = cookie_id + "=" + task + "; expires=Thu, 01 Jan 2021 00:00:00 UTC";
 	}
 }
 
