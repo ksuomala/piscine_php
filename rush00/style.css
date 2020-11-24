@@ -1,0 +1,106 @@
+body {
+	background-color: white;
+}
+img {
+	height: 10vh;
+	width: 10vw;
+	margin-top: -1vh;
+	margin-left: 5vw;
+	position: absolute;
+	border: solid rgb(131, 212, 240) 1px;
+}
+.title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 4vw;
+	color: white;
+	margin-top: 1vmin;
+	margin-left: 2vmin;
+	text-shadow: 4px 4px 4px palevioletred;
+}
+.bartitle {
+	width: 75vw;
+}
+.topbar {
+	background-color: lightpink;
+	border: solid palevioletred 3px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+td {
+	justify-content: space-between;
+}
+.product {
+	background-color: lightblue;
+	display: flex;
+	flex-direction: row;
+	border: solid palevioletred 3px;
+	justify-content: space-between;
+	margin-right: 3vw;
+	margin-left: 3vw;
+}
+.login_menu {
+	background-color: grey;
+	display: flex;
+	flex-direction: column;
+	border: solid palevioletred 3px;
+	justify-content: space-between;
+	margin-right: 3vw;
+	margin-left: 3vw;
+}
+
+.category{
+	background-color: lightpink;
+	border: solid palevioletred 1px;
+	display: flex;
+	flex-direction: column;
+	height: 80vh;
+	width: 30vw;
+	margin-right: 3vw;
+	margin-left: 3vw;
+	align-items: center;
+}
+.container {
+	background-color: paleturquoise;
+	height: 20vh;
+	width: 20vw;
+	border: solid rgb(97, 205, 224) 1px;
+}
+.name {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 2vw;
+	color: white;
+	text-align: center;
+	text-shadow: 2px 2px 2px rgb(148, 205, 224);
+}
+.price {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2vw;
+	background: linear-gradient(white, lightpink);
+	border: solid palevioletred 1px;
+	margin-top: 10vh;
+	margin-left: 7.3vw;
+	margin-right: 7.3vw;
+}
+.cath {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	font-size: 3vw;
+	font-weight: bold;
+	text-shadow: 4px 4px 4px palevioletred;
+	color: white;
+}
+.login {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 2.3vw;
+	color: palevioletred;
+	font-weight: bold;
+	width: 5vw;
+}
+.bas {
+	height: 4vw;
+	margin-top: -2vmin;
+	width: auto;
+	background-color: white;
+	border: solid palevioletred 1px;
+}
